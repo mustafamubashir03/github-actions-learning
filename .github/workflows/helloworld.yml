@@ -1,1 +1,13 @@
 name: "Hello world workflow"
+#Controls the workflow to run when the repo is pushed to main branch
+on: 
+    push:
+        branches:
+            - main
+            - production
+jobs:
+    hello_world:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Print hello world"
+              run: echo "Hello world"
