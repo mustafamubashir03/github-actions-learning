@@ -4,11 +4,19 @@ on:
         branches:
             - main
             - test
+    pull_request:
+        branches:
+            - main
 jobs:
       on-push:
         runs-on: ubuntu-latest
         steps:
             - name: "Running on main/test push"
               run: echo "Running on main push"
+      on-pull:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Running on main pull"
+              run: echo "Running on main pull"
             
         
