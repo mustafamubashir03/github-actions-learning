@@ -8,7 +8,7 @@ jobs:
       on-push:
         runs-on: ubuntu-latest
         steps:
-            - name: "Running on main push"
+            - name: "Running on main/test push"
               run: echo "Running on main push"
             
         
